@@ -19,7 +19,6 @@ class WpFlusher {
     }
 
     flush() {
-        this.clearFile();
         console.log('Getting and posting', parseInt(properties.get('count.post.per.generate')), 'articles to flush to your wordpress :-p');
         hn.ask_hn().recent((error, data) => {
             if (error) throw error;
@@ -31,14 +30,6 @@ class WpFlusher {
             });
 
             console.log('Done!!');
-        });
-    }
-
-    clearFile() {
-        fs.writeFileSync(LINK_FILE, '', (err) => {
-            if (err) {
-                return console.error('Clean link file error: ', err);
-            }
         });
     }
 
