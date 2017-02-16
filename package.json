@@ -1,0 +1,31 @@
+{
+  "name": "wp-flush",
+  "version": "1.0.0",
+  "description": "Flush content to your wordpress! :-p",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangye177/wp-flush.git"
+  },
+  "keywords": [
+    "nodejs",
+    "wordpress",
+    "content",
+    "generator"
+  ],
+  "author": "yehuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huangye177/wp-flush/issues"
+  },
+  "homepage": "https://github.com/huangye177/wp-flush#readme",
+  "dependencies": {
+    "hacker-news-api": "^2.0.0",
+    "lodash": "^4.17.4",
+    "properties-reader": "0.0.15",
+    "wpapi": "^1.0.2"
+  }
+}
